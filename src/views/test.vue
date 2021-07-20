@@ -14,9 +14,15 @@
     <br />
     <span class="text-indigo-600">Vite 2.x + Vue 3.x + Tailwind 2.x</span>
   </h2>
-  <a-button type="primary">Primary Button</a-button>
+  <a-button type="primary">Primary Button{{ a }}</a-button>
 </template>
 <script setup lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import { Button } from "ant-design-vue";
+
+const a = ref("");
+
+function init() {
+  console.log("123");
+}
 </script>
